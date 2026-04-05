@@ -40,8 +40,8 @@
     <div class="hero-content">
       <h1 class="hero-name">Good enough<br><em>isn't.</em></h1>
       <p class="hero-tagline">
-        I care about the full picture: how it's built, how it looks, and whether it works for the person on the other end.
-        <br><strong>That's not extra. That's the job.</strong></br>
+        Most people stop at working. I think about what it's like to actually use. 
+        <strong>There's a difference, and it matters.</strong>
       </p>
       <div class="hero-cta">
         <a href="#contact" class="btn-primary">Get in touch</a>
@@ -49,19 +49,21 @@
       </div>
     </div>
 
-    <!-- Terminal — edit content in script.js → lines array -->
-    <div class="hero-terminal">
-      <div class="terminal-window">
-        <div class="terminal-bar">
-          <span class="terminal-dot red"></span>
-          <span class="terminal-dot amber"></span>
-          <span class="terminal-dot green"></span>
-          <span class="terminal-title">portfolio</span>
-        </div>
-        <div class="terminal-body" id="terminalBody"></div>
+    <!-- Sticky Note -->
+    <div class="hero-sticky-wrap">
+      <div class="sticky-note">
+        <div class="sticky-tape"></div>
+        <p class="sticky-heading">things about me →</p>
+        <ul class="sticky-list">
+          <li><span class="sticky-bullet">✦</span> CS grad student @ Cornell <em>(almost done!)</em></li>
+          <li><span class="sticky-bullet">✦</span> ex-Maersk intern</li>
+          <li><span class="sticky-bullet">✦</span> Bay Area come June</li>
+          <li><span class="sticky-bullet">✦</span> fluent in Modern Family references</li>
+        </ul>
       </div>
     </div>
   </section>
+
 
   <!-- ABOUT -->
   <section id="about">
@@ -71,21 +73,24 @@
     </div>
     <div class="about-body">
       <p>
-        I'm a software engineer wrapping up my <strong>M.Eng. in Computer Science at Cornell University</strong>
-        (graduating May 2026). Before that, I graduated with a 9.3 GPA and a B.E. in CS, and then kept going,
-        because there was more to learn.
+        I'm Sanjana Janardhan, finishing up my <strong>M.Eng. in Computer Science at Cornell University</strong>
+        (graduating May 2026). I did my undergrad in CS too; turns out one degree wasn't quite enough to scratch the itch.
+        I like understanding how things actually work, not just that they do.
       </p>
       <p>
-        My work spans full-stack development, cloud infrastructure, and applied AI. At Maersk, I built
-        systems used across global teams. In my own time I'm building tools that solve real problems -
-        some practical, some just genuinely fun to make.
+        I've worked across the stack: building backend systems, wiring up cloud infrastructure, and dabbling in AI
+        when the problem calls for it. At Maersk, I got to see what it looks like when software runs at real scale.
+        That stuck with me, and it's shaped how I think
+        about building things.
       </p>
       <p>
-        I'm actively looking for <strong>new grad software engineering roles</strong> in the Bay Area and NYC.
-        Somewhere fast-moving, where the work actually matters.
-      </p>      
+        When I'm not at a keyboard, I'm probably singing, or hunting down a restaurant I've never tried,
+        or going down a rabbit hole on something that has nothing to do with my to-do list. I like people, I like
+        good food, and I genuinely believe the best ideas come from having interests outside your field.
+      </p>
     </div>
   </section>
+
 
   <!-- EXPERIENCE -->
   <section id="experience">
@@ -94,21 +99,22 @@
     <div class="divider"></div>
     <div class="exp-item">
       <div>
-        <div class="exp-date">Summer 2024</div>
-        <div class="exp-company">Maersk</div>
+        <div class="exp-date">July 2024 - June 2025</div>
+        <div class="exp-company">A.P. Moller Maersk</div>
         <div class="exp-title">Technology Services & Engineering Intern</div>
       </div>
       <div>
         <p class="exp-description">
           I worked on cloud infrastructure and internal tooling at one of the world's largest shipping companies.
-          Built and automated OS image pipelines, provisioned physical servers, and contributed to infrastructure-as-code
-          systems used by global teams. Owned work end-to-end, and not just contributed to it.
+          I built and automated OS image pipelines, provisioned physical servers, and contributed to infrastructure-as-code
+          systems used by global teams. Owned work end-to-end, not just contributed to it.
         </p>
         <div class="exp-tags">
           <span class="tag">AWS</span>
           <span class="tag">Terraform</span>
           <span class="tag">Docker</span>
           <span class="tag">VMware</span>
+          <span class="tag">Agile</span>
         </div>
       </div>
     </div>
@@ -163,11 +169,37 @@
         <div class="project-num">04</div>
         <div class="project-name">Heart Disease Classifier</div>
         <p class="project-desc">
-          ML model predicting heart disease risk from clinical data, with a focus on interpretability —
+          ML model predicting heart disease risk from clinical data, with a focus on interpretability,
           not just accuracy. Because models you can't explain aren't useful in healthcare.
         </p>
         <div class="exp-tags">
           <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">ML</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">05</div>
+        <div class="project-name">Guiding LLMs Towards (In)Secure Code Generation</div>
+        <p class="project-desc">
+          Evaluated how prompting strategies affect LLM-generated code security across Claude and GPT models.
+          Few-shot and feedback-driven prompting improved security; newer models were the easiest to jailbreak.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">LLM</span>
+          <span class="tag">Prompt Engineering</span><span class="tag">CWEval</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">06</div>
+        <div class="project-name">TurnNLearn</div>
+        <p class="project-desc">
+          Flashcard-based learning app with quizzes, reverse flashcards, and multiple subject tracks.
+          Built and deployed end-to-end as a live web app.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
         </div>
       </div>
 
@@ -183,8 +215,8 @@
       <div>
         <div class="skill-group-title">Languages</div>
         <ul class="skill-list">
-          <li>Python</li><li>JavaScript / TypeScript</li>
-          <li>Java</li><li>SQL</li><li>Bash</li>
+          <li>Python</li><li>JavaScript</li>
+          <li>Java</li><li>SQL</li><li>C & C++</li>
         </ul>
       </div>
       <div>
@@ -214,7 +246,7 @@
     <p class="section-label">Education</p>
     <h2 class="section-title">Where I've<br><em>learned.</em></h2>
     <div class="divider"></div>
-
+ 
     <div class="edu-item">
       <div>
         <div class="edu-year">2025 – 2026</div>
@@ -223,22 +255,32 @@
       <div>
         <div class="edu-degree">M.Eng. in Computer Science</div>
         <p class="edu-detail">
-          Coursework in Computer Vision, Operating Systems, Computer Networks.
+          Relevant coursework: Computer Vision · Operating Systems · Computer Networks ·
+          Software Engineering in ML · Database Systems
         </p>
       </div>
     </div>
-
+ 
     <div class="edu-item">
       <div>
         <div class="edu-year">2021 – 2025</div>
         <div class="edu-school">Visvesvaraya Technological University</div>
       </div>
       <div>
-        <div class="edu-degree">B.E. in Computer Science</div>
-        <p class="edu-detail">CGPA 9.3 / 10. Volunteer educator at U&amp;I Non-Profit.</p>
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4901478" target="_blank" rel="noopener">
-          Research publication on Swarm Robotics (SSRN Elsevier) ↗
-        </a>
+        <div class="edu-degree">B.E. in Computer Science - First Class with Distinction</div>
+        <p class="edu-detail">
+          Relevant coursework: Data Structures &amp; Algorithms · AI &amp; Machine Learning ·
+          Deep Learning · Full Stack Development · Cloud Computing
+        </p>
+        <p class="edu-detail" style="margin-top: 1rem;">
+          Co-authored a published survey on swarm robotics, exploring how decentralized control
+          and emergent behavior enable groups of simple robots to collectively solve complex problems.
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4901478" target="_blank" rel="noopener">Read it on SSRN Elsevier ↗</a>
+        </p>
+        <p class="edu-detail" style="margin-top: 0.75rem;">
+          Volunteer educator at <a href="https://uandi.org.in" target="_blank" rel="noopener">U&amp;I ↗</a>,
+          a non-profit supporting underprivileged children across India.
+        </p>
       </div>
     </div>
   </section>
