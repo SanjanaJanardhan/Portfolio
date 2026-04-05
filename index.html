@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanjana's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">SJ</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#education" onclick="closeMobileMenu()">Education</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" style="opacity:1; transform:none;">
+    <div class="hero-content">
+      <h1 class="hero-name">Good enough<br><em>isn't.</em></h1>
+      <p class="hero-tagline">
+        I care about the full picture: how it's built, how it looks, and whether it works for the person on the other end.
+        <br><strong>That's not extra. That's the job.</strong></br>
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Get in touch</a>
+        <a href="#projects" class="btn-outline">Explore my work</a>
+      </div>
+    </div>
+
+    <!-- Terminal — edit content in script.js → lines array -->
+    <div class="hero-terminal">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot amber"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">portfolio</span>
+        </div>
+        <div class="terminal-body" id="terminalBody"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-header">
+      <p class="section-label">About me</p>
+      <h2 class="section-title">A little <em>about me.</em></h2>
+    </div>
+    <div class="about-body">
+      <p>
+        I'm a software engineer wrapping up my <strong>M.Eng. in Computer Science at Cornell University</strong>
+        (graduating May 2026). Before that, I graduated with a 9.3 GPA and a B.E. in CS, and then kept going,
+        because there was more to learn.
+      </p>
+      <p>
+        My work spans full-stack development, cloud infrastructure, and applied AI. At Maersk, I built
+        systems used across global teams. In my own time I'm building tools that solve real problems -
+        some practical, some just genuinely fun to make.
+      </p>
+      <p>
+        I'm actively looking for <strong>new grad software engineering roles</strong> in the Bay Area and NYC.
+        Somewhere fast-moving, where the work actually matters.
+      </p>      
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Where I've<br><em>worked.</em></h2>
+    <div class="divider"></div>
+    <div class="exp-item">
+      <div>
+        <div class="exp-date">Summer 2024</div>
+        <div class="exp-company">Maersk</div>
+        <div class="exp-title">Technology Services & Engineering Intern</div>
+      </div>
+      <div>
+        <p class="exp-description">
+          I worked on cloud infrastructure and internal tooling at one of the world's largest shipping companies.
+          Built and automated OS image pipelines, provisioned physical servers, and contributed to infrastructure-as-code
+          systems used by global teams. Owned work end-to-end, and not just contributed to it.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">AWS</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">Docker</span>
+          <span class="tag">VMware</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label">Projects</p>
+    <h2 class="section-title">Things I've<br><em>built.</em></h2>
+    <div class="divider"></div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-num">01</div>
+        <div class="project-name">ConnectAbility</div>
+        <p class="project-desc">
+          AI accessibility tool combining Vision Transformers and LLaMA to help users with visual or
+          cognitive impairments navigate digital content. Built something that genuinely makes the internet more usable.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">ViT</span><span class="tag">LLaMA</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">02</div>
+        <div class="project-name">Spam Back!</div>
+        <p class="project-desc">
+          macOS app that runs LLaMA-3 locally to auto-generate replies that waste scammers' time.
+          Fully on-device, no cloud needed. Shipped it because it was clever and kind of satisfying.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">LLaMA-3</span><span class="tag">macOS</span><span class="tag">Local LLM</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">03</div>
+        <div class="project-name">SereneSpace</div>
+        <p class="project-desc">
+          Full-stack MERN mental wellness app with journaling, mood tracking, and a genuinely calm UI.
+          End-to-end: database, API, frontend, design — all of it.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">MongoDB</span><span class="tag">Express</span>
+          <span class="tag">React</span><span class="tag">Node.js</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">04</div>
+        <div class="project-name">Heart Disease Classifier</div>
+        <p class="project-desc">
+          ML model predicting heart disease risk from clinical data, with a focus on interpretability —
+          not just accuracy. Because models you can't explain aren't useful in healthcare.
+        </p>
+        <div class="exp-tags">
+          <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">ML</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label">Skills</p>
+    <h2 class="section-title">What I<br><em>bring.</em></h2>
+    <div class="divider"></div>
+    <div class="skills-layout">
+      <div>
+        <div class="skill-group-title">Languages</div>
+        <ul class="skill-list">
+          <li>Python</li><li>JavaScript / TypeScript</li>
+          <li>Java</li><li>SQL</li><li>Bash</li>
+        </ul>
+      </div>
+      <div>
+        <div class="skill-group-title">Frameworks & Tools</div>
+        <ul class="skill-list">
+          <li>React · Node.js · Express</li>
+          <li>Docker · Terraform</li>
+          <li>AWS (EC2, S3, IAM)</li>
+          <li>VMware</li><li>Git · Linux</li>
+        </ul>
+      </div>
+      <div>
+        <div class="skill-group-title">ML / AI</div>
+        <ul class="skill-list">
+          <li>PyTorch · Scikit-learn</li>
+          <li>Vision Transformers (ViT)</li>
+          <li>LLaMA · LLM systems</li>
+          <li>OpenCV</li>
+          <li>Computer Vision</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <p class="section-label">Education</p>
+    <h2 class="section-title">Where I've<br><em>learned.</em></h2>
+    <div class="divider"></div>
+
+    <div class="edu-item">
+      <div>
+        <div class="edu-year">2025 – 2026</div>
+        <div class="edu-school">Cornell University</div>
+      </div>
+      <div>
+        <div class="edu-degree">M.Eng. in Computer Science</div>
+        <p class="edu-detail">
+          Coursework in Computer Vision, Operating Systems, Computer Networks.
+        </p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <div class="edu-year">2021 – 2025</div>
+        <div class="edu-school">Visvesvaraya Technological University</div>
+      </div>
+      <div>
+        <div class="edu-degree">B.E. in Computer Science</div>
+        <p class="edu-detail">CGPA 9.3 / 10. Volunteer educator at U&amp;I Non-Profit.</p>
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4901478" target="_blank" rel="noopener">
+          Research publication on Swarm Robotics (SSRN Elsevier) ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">Let's talk.</h2>
+    <p class="contact-sub">
+      If something here caught your attention,<br>I'd love to hear from you.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:sj882@cornell.edu" class="contact-link primary">Email</a>
+      <a href="https://www.linkedin.com/in/sanjana-janardhan" target="_blank" class="contact-link">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026</p>
+    <p>Made from scratch.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
