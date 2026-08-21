@@ -1,308 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sanjana's Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjana Janardhan — Manifest</title>
+<meta name="description" content="Sanjana Janardhan — Software Engineer. Infrastructure, full-stack, and applied AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <a href="#hero" class="nav-logo">SJ</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a href="#hero" class="nav-mark" aria-label="Home">
+    <span class="mark-ring">
+      <svg viewBox="0 0 60 60" class="mark-svg" aria-hidden="true">
+        <circle cx="30" cy="30" r="27" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+      <span class="mark-text">SJ</span>
+    </span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#about"><span class="idx">01</span>About</a>
+    <a href="#experience"><span class="idx">02</span>Experience</a>
+    <a href="#projects"><span class="idx">03</span>Projects</a>
+    <a href="#skills"><span class="idx">04</span>Skills</a>
+    <a href="#education"><span class="idx">05</span>Education</a>
+    <a href="#contact"><span class="idx">06</span>Contact</a>
   </nav>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#about" onclick="closeMobileMenu()">About</a>
-    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
-    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
-    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
-    <a href="#education" onclick="closeMobileMenu()">Education</a>
-    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
-  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
 
   <!-- HERO -->
-  <section id="hero" style="opacity:1; transform:none;">
-    <div class="hero-content">
-      <h1 class="hero-name">Good enough<br><em>isn't.</em></h1>
-      <p class="hero-tagline">
-        Most people stop at working. I think about what it's like to actually use. 
-        <strong>There's a difference, and it matters.</strong>
-      </p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn-primary">Get in touch</a>
-        <a href="#projects" class="btn-outline">Explore my work</a>
-      </div>
-    </div>
+  <section class="hero" id="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner reveal-group">
+      <p class="eyebrow reveal"><span class="dot"></span>STATUS — OPEN TO NEW GRAD SWE ROLES · 2026</p>
+      <h1 class="hero-title reveal">
+        <span class="line">SANJANA</span>
+        <span class="line">JANARDHAN</span>
+      </h1>
+      <p class="hero-tagline reveal">Software engineer who ships systems, not demos — infrastructure, full-stack, and applied AI, built to actually hold weight in production.</p>
 
-    <!-- Sticky Note -->
-    <div class="hero-sticky-wrap">
-      <div class="sticky-note">
-        <div class="sticky-tape"></div>
-        <p class="sticky-heading">things about me →</p>
-        <ul class="sticky-list">
-          <li><span class="sticky-bullet">✦</span> CS grad @ Cornell</li>
-          <li><span class="sticky-bullet">✦</span> ex-Maersk intern</li>
-          <li><span class="sticky-bullet">✦</span> Bay Area</li>
-          <li><span class="sticky-bullet">✦</span> fluent in Modern Family references</li>
-        </ul>
+      <div class="manifest-fields reveal">
+        <div class="field"><span class="f-label">ORIGIN</span><span class="f-value">Cornell M.Eng '26 · VTU B.E.</span></div>
+        <div class="field"><span class="f-label">LAST PORT</span><span class="f-value">A.P. Moller–Maersk</span></div>
+        <div class="field"><span class="f-label">CURRENT</span><span class="f-value">Think Round Inc, Full Stack</span></div>
+        <div class="field"><span class="f-label">BASED</span><span class="f-value">New York City</span></div>
+      </div>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary magnetic"><span>View the manifest</span></a>
+        <a href="#contact" class="btn btn-ghost magnetic"><span>Get in touch</span></a>
       </div>
     </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL</div>
   </section>
-
 
   <!-- ABOUT -->
-  <section id="about">
-    <div class="about-header">
-      <p class="section-label">About me</p>
-      <h2 class="section-title">A little <em>about me.</em></h2>
+  <section class="section" id="about">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2>Cargo description</h2>
     </div>
-    <div class="about-body">
-      <p>
-        I'm Sanjana Janardhan, just graduated with an <strong>M.Eng. in Computer Science at Cornell University</strong>. I did my undergrad in CS too; turns out one degree wasn't quite enough to scratch the itch.
-        I like understanding how things actually work, not just that they do.
-      </p>
-      <p>
-        I've worked across the stack: building backend systems, wiring up cloud infrastructure, and dabbling in AI
-        when the problem calls for it. At Maersk, I got to see what it looks like when software runs at real scale.
-        That stuck with me, and it's shaped how I think
-        about building things.
-      </p>
-      <p>
-        When I'm not at a keyboard, I'm probably singing, or hunting down a restaurant I've never tried,
-        or going down a rabbit hole on something that has nothing to do with my to-do list. I like people, I like
-        good food, and I genuinely believe the best ideas come from having interests outside your field.
-      </p>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I just finished an M.Eng. in Computer Science at Cornell, after a CS undergrad that apparently didn't scratch the itch on its own. What I actually care about is how things work under the hood, not just that they run.</p>
+        <p>I've worked across the stack: backend systems, cloud infrastructure, and AI when the problem calls for it. At Maersk I got to see what software looks like at real scale, and it changed how I think about building things — nothing ships until it can survive contact with production.</p>
+        <p>Outside of a keyboard, I'm probably singing, hunting down a restaurant I haven't tried yet, or three tabs deep into something with zero relevance to my to-do list.</p>
+      </div>
+      <div class="about-manifest reveal">
+        <div class="manifest-card">
+          <div class="mc-row"><span>DECLARED CONTENTS</span><span>1x Engineer</span></div>
+          <div class="mc-row"><span>HANDLING</span><span>Full-stack, Infra, ML</span></div>
+          <div class="mc-row"><span>ORIGIN PORT</span><span>Fremont, CA → NYC</span></div>
+          <div class="mc-row"><span>PUBLISHED</span><span>Swarm Robotics, SSRN/Elsevier</span></div>
+          <div class="mc-row"><span>VOLUNTEER</span><span>U&amp;I — education, India</span></div>
+          <div class="mc-row mc-fine"><span>NOTE</span><span>Fluent in Modern Family references</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
-
   <!-- EXPERIENCE -->
-  <section id="experience">
-    <p class="section-label">Experience</p>
-    <h2 class="section-title">Where I've<br><em>worked.</em></h2>
-    <div class="divider"></div>
-    <div class="exp-item">
-      <div>
-        <div class="exp-date">July 2024 - June 2025</div>
-        <div class="exp-company">A.P. Moller Maersk</div>
-        <div class="exp-title">Technology Services & Engineering Intern</div>
-      </div>
-      <div>
-        <p class="exp-description">
-          I worked on cloud infrastructure and internal tooling at one of the world's largest shipping companies.
-          I built and automated OS image pipelines, provisioned physical servers, and contributed to infrastructure-as-code
-          systems used by global teams. Owned work end-to-end, not just contributed to it.
-        </p>
-        <div class="exp-tags">
-          <span class="tag">AWS</span>
-          <span class="tag">Terraform</span>
-          <span class="tag">Docker</span>
-          <span class="tag">VMware</span>
-          <span class="tag">Agile</span>
+  <section class="section" id="experience">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2>Route history</h2>
+    </div>
+    <div class="route">
+      <div class="route-line" aria-hidden="true"></div>
+
+      <article class="route-stop reveal">
+        <div class="route-dot"></div>
+        <div class="route-content">
+          <div class="route-top">
+            <h3>Think Round Inc.</h3>
+            <span class="route-date">Jul 2026 — present</span>
+          </div>
+          <p class="route-role">Full Stack Developer Intern · Remote, from NYC</p>
+          <p>Building product features across Node.js, Express, and React, wiring REST APIs and cloud deploys, running in Agile sprints alongside a fully distributed engineering team.</p>
+          <div class="tag-row">
+            <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">React</span><span class="tag">REST APIs</span><span class="tag">Cloud Deploy</span>
+          </div>
         </div>
-      </div>
+      </article>
+
+      <article class="route-stop reveal">
+        <div class="route-dot"></div>
+        <div class="route-content">
+          <div class="route-top">
+            <h3>A.P. Moller–Maersk</h3>
+            <span class="route-date">Jul 2024 — Jun 2025</span>
+          </div>
+          <p class="route-role">Cloud Infrastructure Engineering Intern · Bangalore</p>
+          <p>Automated Windows and Linux image pipelines with AWS, Terraform, and Docker, cutting environment provisioning from roughly an hour down to about ten minutes across 70+ environments, holding ~98% uptime. Built Grafana dashboards that cut mean time to detect by roughly 40%.</p>
+          <div class="tag-row">
+            <span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Docker</span><span class="tag">Python</span><span class="tag">Grafana</span><span class="tag">VMware</span>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
-    <p class="section-label">Projects</p>
-    <h2 class="section-title">Things I've<br><em>built.</em></h2>
-    <div class="divider"></div>
-    <div class="projects-grid">
+  <section class="section" id="projects">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2>Manifest — containers</h2>
+      <p class="section-sub">Selected builds, logged by status.</p>
+    </div>
 
-      <div class="project-card">
-        <div class="project-num">01</div>
-        <div class="project-name">ConnectAbility</div>
-        <p class="project-desc">
-          AI accessibility tool combining Vision Transformers and LLaMA to help users with visual or
-          cognitive impairments navigate digital content. Built something that genuinely makes the internet more usable.
-        </p>
-        <div class="exp-tags">
-          <span class="tag">ViT</span><span class="tag">LLaMA</span>
-          <span class="tag">Python</span>
+    <div class="containers">
+
+      <article class="container-card reveal">
+        <div class="cc-head">
+          <span class="cc-id">SJ-01</span>
+          <span class="stamp-badge stamp-delivered" id="stamp1"></span>
         </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">02</div>
-        <div class="project-name">Spam Back!</div>
-        <p class="project-desc">
-          macOS app that runs LLaMA-3 locally to auto-generate replies that waste scammers' time.
-          Fully on-device, no cloud needed. Shipped it because it was clever and kind of satisfying.
-        </p>
-        <div class="exp-tags">
-          <span class="tag">LLaMA-3</span><span class="tag">macOS</span><span class="tag">Local LLM</span>
+        <h3>Spam Back!</h3>
+        <p>An on-device macOS agent that runs a local LLM through Ollama to auto-generate replies that waste scammers' time. Fully offline, no data leaves the machine — privacy by architecture, not by policy.</p>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">Ollama</span><span class="tag">SQLite</span><span class="tag">AppleScript</span>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-num">03</div>
-        <div class="project-name">SereneSpace</div>
-        <p class="project-desc">
-          Full-stack MERN mental wellness app with journaling, mood tracking, and a genuinely calm UI.
-          End-to-end: database, API, frontend, design — all of it.
-        </p>
-        <div class="exp-tags">
-          <span class="tag">MongoDB</span><span class="tag">Express</span>
-          <span class="tag">React</span><span class="tag">Node.js</span>
+      <article class="container-card reveal">
+        <div class="cc-head">
+          <span class="cc-id">SJ-02</span>
+          <span class="stamp-badge stamp-transit" id="stamp2"></span>
         </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">04</div>
-        <div class="project-name">Heart Disease Classifier</div>
-        <p class="project-desc">
-          ML model predicting heart disease risk from clinical data, with a focus on interpretability,
-          not just accuracy. Because models you can't explain aren't useful in healthcare.
-        </p>
-        <div class="exp-tags">
-          <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">ML</span>
+        <h3>ConnectAbility</h3>
+        <p>Started after watching visually impaired students near my school struggle to take online tests independently. Combines Vision Transformers and LLaMA for image captioning, aimed at making digital content navigable without sight. Self-initiated, still evolving.</p>
+        <div class="tag-row">
+          <span class="tag">Django</span><span class="tag">ViT</span><span class="tag">LLaMA</span>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-num">05</div>
-        <div class="project-name">Guiding LLMs Towards (In)Secure Code Generation</div>
-        <p class="project-desc">
-          Evaluated how prompting strategies affect LLM-generated code security across Claude and GPT models.
-          Few-shot and feedback-driven prompting improved security; newer models were the easiest to jailbreak.
-        </p>
-        <div class="exp-tags">
-          <span class="tag">LLM</span>
-          <span class="tag">Prompt Engineering</span><span class="tag">CWEval</span>
+      <article class="container-card reveal">
+        <div class="cc-head">
+          <span class="cc-id">SJ-03</span>
+          <span class="stamp-badge stamp-delivered" id="stamp3"></span>
         </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-num">06</div>
-        <div class="project-name">TurnNLearn</div>
-        <p class="project-desc">
-          Flashcard-based learning app with quizzes, reverse flashcards, and multiple subject tracks.
-          Built and deployed end-to-end as a live web app.
-        </p>
-        <div class="exp-tags">
-          <span class="tag">HTML</span><span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
+        <h3>SereneSpace</h3>
+        <p>A full-stack mental wellness app: journaling, mood tracking, and sentiment analysis wrapped in an interface built to feel calm rather than clinical. Database, API, frontend, design — end to end.</p>
+        <div class="tag-row">
+          <span class="tag">MongoDB</span><span class="tag">Express</span><span class="tag">React</span><span class="tag">Node.js</span>
         </div>
-      </div>
+      </article>
 
+      <article class="container-card reveal">
+        <div class="cc-head">
+          <span class="cc-id">SJ-04</span>
+          <span class="stamp-badge stamp-delivered" id="stamp4"></span>
+        </div>
+        <h3>EvalDeck</h3>
+        <p>An LLM evaluation platform for comparing model behavior systematically, built around a FastAPI backend and MCP tooling with a React and TypeScript frontend.</p>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">FastAPI</span><span class="tag">MCP</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="field-notes reveal">
+      <span class="fn-label">FIELD NOTES</span>
+      <p><strong>A Journey through Swarm Robotics</strong> — co-authored survey on decentralized multi-agent systems, published on SSRN/Elsevier, Aug 2024.</p>
+      <p><strong>Guiding LLMs Towards (In)Secure Code Generation</strong> — evaluated how prompting strategy affects code security across Claude and GPT models.</p>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
-    <p class="section-label">Skills</p>
-    <h2 class="section-title">What I<br><em>bring.</em></h2>
-    <div class="divider"></div>
-    <div class="skills-layout">
-      <div>
-        <div class="skill-group-title">Languages</div>
-        <ul class="skill-list">
-          <li>Python</li><li>JavaScript</li>
-          <li>Java</li><li>SQL</li><li>C & C++</li>
-        </ul>
+  <section class="section" id="skills">
+    <div class="section-head reveal">
+      <span class="section-num">04</span>
+      <h2>Inventory</h2>
+    </div>
+    <div class="inventory">
+      <div class="inv-col reveal">
+        <span class="inv-label">LANGUAGES</span>
+        <ul><li>Python</li><li>JavaScript</li><li>Java</li><li>SQL</li><li>C / C++</li></ul>
       </div>
-      <div>
-        <div class="skill-group-title">Frameworks & Tools</div>
-        <ul class="skill-list">
-          <li>React · Node.js · Express</li>
-          <li>Docker · Terraform</li>
-          <li>AWS (EC2, S3, IAM)</li>
-          <li>VMware</li><li>Git · Linux</li>
-        </ul>
+      <div class="inv-col reveal">
+        <span class="inv-label">FRAMEWORKS &amp; TOOLS</span>
+        <ul><li>React · Node.js · Express</li><li>Docker · Terraform</li><li>AWS (EC2, S3, IAM)</li><li>VMware</li><li>Git · Linux</li></ul>
       </div>
-      <div>
-        <div class="skill-group-title">ML / AI</div>
-        <ul class="skill-list">
-          <li>PyTorch · Scikit-learn</li>
-          <li>Vision Transformers (ViT)</li>
-          <li>LLaMA · LLM systems</li>
-          <li>OpenCV</li>
-          <li>Computer Vision</li>
-        </ul>
+      <div class="inv-col reveal">
+        <span class="inv-label">ML / AI</span>
+        <ul><li>PyTorch · Scikit-learn</li><li>Vision Transformers</li><li>LLaMA · LLM systems</li><li>OpenCV</li></ul>
+      </div>
+      <div class="inv-col reveal">
+        <span class="inv-label">CERTIFIED</span>
+        <ul><li>AWS Cloud Practitioner</li></ul>
       </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
-  <section id="education">
-    <p class="section-label">Education</p>
-    <h2 class="section-title">Where I've<br><em>learned.</em></h2>
-    <div class="divider"></div>
- 
-    <div class="edu-item">
-      <div>
-        <div class="edu-year">2025 – 2026</div>
-        <div class="edu-school">Cornell University</div>
-      </div>
-      <div>
-        <div class="edu-degree">M.Eng. in Computer Science</div>
-        <p class="edu-detail">
-          Relevant coursework: Computer Vision · Operating Systems · Computer Networks ·
-          Software Engineering in ML · Database Systems
-        </p>
-      </div>
+  <section class="section" id="education">
+    <div class="section-head reveal">
+      <span class="section-num">05</span>
+      <h2>Ports of call</h2>
     </div>
- 
-    <div class="edu-item">
-      <div>
-        <div class="edu-year">2021 – 2025</div>
-        <div class="edu-school">Visvesvaraya Technological University</div>
-      </div>
-      <div>
-        <div class="edu-degree">B.E. in Computer Science - First Class with Distinction</div>
-        <p class="edu-detail">
-          Relevant coursework: Data Structures &amp; Algorithms · AI &amp; Machine Learning ·
-          Deep Learning · Full Stack Development · Cloud Computing
-        </p>
-        <p class="edu-detail" style="margin-top: 1rem;">
-          Co-authored a published survey on swarm robotics, exploring how decentralized control
-          and emergent behavior enable groups of simple robots to collectively solve complex problems.
-          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4901478" target="_blank" rel="noopener">Read it on SSRN Elsevier ↗</a>
-        </p>
-        <p class="edu-detail" style="margin-top: 0.75rem;">
-          Volunteer educator at <a href="https://uandi.org.in" target="_blank" rel="noopener">U&amp;I ↗</a>,
-          a non-profit supporting underprivileged children across India.
-        </p>
-      </div>
+    <div class="route">
+      <div class="route-line" aria-hidden="true"></div>
+      <article class="route-stop reveal">
+        <div class="route-dot"></div>
+        <div class="route-content">
+          <div class="route-top">
+            <h3>Cornell University</h3>
+            <span class="route-date">2025 — 2026</span>
+          </div>
+          <p class="route-role">M.Eng. in Computer Science · GPA 3.3/4.0</p>
+          <p>Computer Vision · Operating Systems · Computer Networks · Software Engineering in ML · Database Systems</p>
+        </div>
+      </article>
+      <article class="route-stop reveal">
+        <div class="route-dot"></div>
+        <div class="route-content">
+          <div class="route-top">
+            <h3>Visvesvaraya Technological University</h3>
+            <span class="route-date">2021 — 2025</span>
+          </div>
+          <p class="route-role">B.E. in Computer Science · First Class with Distinction · 9.3/10 CGPA</p>
+          <p>Gold medal, top semester scorer. Data Structures &amp; Algorithms · AI &amp; Machine Learning · Deep Learning · Full Stack Development · Cloud Computing</p>
+        </div>
+      </article>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
-    <p class="section-label">Contact</p>
-    <h2 class="section-title">Let's talk.</h2>
-    <p class="contact-sub">
-      If something here caught your attention,<br>I'd love to hear from you.
-    </p>
-    <div class="contact-links">
-      <a href="mailto:sj882@cornell.edu" class="contact-link primary">Email</a>
-      <a href="https://www.linkedin.com/in/sanjana-janardhan" target="_blank" class="contact-link">LinkedIn</a>
+  <section class="section contact" id="contact">
+    <div class="contact-inner reveal">
+      <span class="section-num">06</span>
+      <h2>Request the manifest</h2>
+      <p>If something on this page caught your attention, I'd genuinely love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:sanjanardh19@gmail.com" class="btn btn-primary magnetic"><span>Email me</span></a>
+        <a href="https://www.linkedin.com/in/sanjana-janardhan" target="_blank" rel="noopener" class="btn btn-ghost magnetic"><span>LinkedIn</span></a>
+        <a href="https://github.com/SanjanaJanardhan" target="_blank" rel="noopener" class="btn btn-ghost magnetic"><span>GitHub</span></a>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2026</p>
-    <p>Made from scratch.</p>
-  </footer>
+</main>
 
-  <script src="script.js"></script>
+<footer class="footer">
+  <span>© 2026 Sanjana Janardhan</span>
+  <span>Built from scratch, shipped on purpose.</span>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
