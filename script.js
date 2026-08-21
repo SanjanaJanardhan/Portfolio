@@ -37,27 +37,33 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // ---------- SCROLL REVEALS (manual scroll-check, same approach as hero shapes) ----------
-  var pops = Array.prototype.slice.call(document.querySelectorAll('.pop'));
+  // ---------- SCROLL REVEALS ----------
+  var pops = document.querySelectorAll('.pop');
   if (reducedMotion) {
     pops.forEach(function (p) { p.classList.add('in'); });
   } else {
-    function checkPops() {
-      var vh = window.innerHeight;
-      pops.forEach(function (p) {
-        if (p.classList.contains('in')) return;
-        var rect = p.getBoundingClientRect();
-        if (rect.top < vh * 0.9) {
-          p.classList.add('in');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
         }
       });
-    }
-    window.addEventListener('scroll', checkPops, { passive: true });
-    window.addEventListener('resize', checkPops);
-    checkPops();
-    // Safety net: re-check periodically in case something (like an image load
-    // shifting layout) causes a section to be missed by the scroll listener.
-    setInterval(checkPops, 700);
+    }, { threshold: 0.15, rootMargin: '0px 0px -12% 0px' });
+    pops.forEach(function (p) { io.observe(p); });
+
+    // Safety net for hard jumps (e.g. clicking a nav link): IntersectionObserver
+    // fires its own callback for any newly-visible element automatically, but if
+    // an element is skipped entirely during a fast jump, this catches it.
+    window.addEventListener('hashchange', function () {
+      setTimeout(function () {
+        pops.forEach(function (p) {
+          if (!p.classList.contains('in') && p.getBoundingClientRect().top < window.innerHeight) {
+            p.classList.add('in');
+          }
+        });
+      }, 400);
+    });
   }
 
   // ---------- MAGNETIC BUTTONS ----------
