@@ -7,14 +7,14 @@
 <meta name="description" content="Sanjana Janardhan — Software Engineer. Cloud systems, product engineering, and applied AI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="nav" id="nav">
-  <a href="#hero" class="nav-mark" aria-label="Home">SJ</a>
-  <nav class="nav-links" aria-label="Primary">
+  <a href="#hero" class="nav-mark">SJ</a>
+  <nav class="nav-links">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
@@ -31,200 +31,184 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="blob blob-blue" aria-hidden="true"></div>
-    <div class="blob blob-pink" aria-hidden="true"></div>
-    <div class="ghost-mark" aria-hidden="true">SJ</div>
-    <div class="hero-inner reveal-group">
-      <p class="eyebrow reveal"><span class="dot"></span>Software engineer &middot; open to new grad roles, 2026</p>
-      <h1 class="hero-title reveal">Sanjana Janardhan</h1>
-      <p class="hero-sub reveal">Cornell M.Eng '26. I build software across cloud systems, product engineering, and the AI layered on top.</p>
-      <div class="pills reveal">
-        <span>React</span><span>Python</span><span>AWS</span><span>LLMs</span><span>TypeScript</span>
-      </div>
-      <div class="hero-cta reveal">
-        <a href="#projects" class="btn btn-primary magnetic"><span>See my work</span></a>
-        <a href="#contact" class="btn btn-ghost magnetic"><span>Get in touch</span></a>
-      </div>
+    <div class="shape" style="width:70px;height:70px;background:var(--blue-bg);top:14%;left:8%;"></div>
+    <div class="shape" style="width:55px;height:55px;border-radius:50%;background:var(--pink-bg);top:18%;right:10%;"></div>
+    <div class="shape" style="width:100px;height:100px;border-radius:50%;background:#F6C9D6;bottom:16%;left:12%;"></div>
+    <div class="shape" style="width:60px;height:60px;background:var(--green-bg);top:60%;right:14%;"></div>
+    <div class="shape" style="width:40px;height:40px;border-radius:50%;background:#B8C8F0;top:38%;left:5%;"></div>
+    <div class="shape" style="width:80px;height:80px;background:#EFC6D6;bottom:22%;right:22%;"></div>
+    <div class="shape" style="width:45px;height:45px;border-radius:50%;background:var(--blue-bg);top:8%;left:44%;"></div>
+
+    <p class="eyebrow"><span class="dot"></span>SOFTWARE ENGINEER</p>
+    <h1>Sanjana Janardhan</h1>
+    <p class="sub">Cornell M.Eng '26. I build software across cloud systems, product engineering, and the AI layered on top.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary magnetic"><span>See my work</span></a>
+      <a href="#contact" class="btn btn-ghost magnetic"><span>Get in touch</span></a>
     </div>
+    <span class="cue">↓ scroll</span>
   </section>
 
   <!-- ABOUT -->
   <section class="section" id="about">
-    <span class="ghost-num" aria-hidden="true">01</span>
-    <div class="section-head reveal">
-      <h2>About</h2>
-    </div>
+    <span class="ghost-num">01</span>
+    <div class="section-head pop"><h2>About</h2></div>
     <div class="about-copy">
-      <p class="reveal">I just finished an M.Eng. in Computer Science at Cornell, after a CS undergrad that apparently didn't scratch the itch on its own. I like understanding how things actually work, not just that they run.</p>
-      <p class="reveal">I've worked across cloud infrastructure, product engineering, and applied AI, often on the same team in the same week. At Maersk I got to see what software looks like at real scale, and it changed how I think about building things.</p>
-      <p class="reveal">Outside of a keyboard, I'm probably singing, hunting down a restaurant I haven't tried yet, or three tabs deep into something with zero relevance to my to-do list.</p>
-      <p class="reveal about-fine">Co-authored a published survey on swarm robotics (SSRN/Elsevier, 2024) and volunteers as an educator with <a href="https://uandi.org.in" target="_blank" rel="noopener">U&amp;I</a>, supporting underprivileged students across India.</p>
+      <p class="pop">I just finished an M.Eng. in Computer Science at Cornell, after a CS undergrad that apparently didn't scratch the itch on its own. I like understanding how things actually work, not just that they run.</p>
+      <p class="pop">I've worked across cloud infrastructure, product engineering, and applied AI, often on the same team in the same week. At Maersk I got to see what software looks like at real scale, and it changed how I think about building things.</p>
+      <p class="pop">Outside of a keyboard, I'm probably singing, hunting down a restaurant I haven't tried yet, or three tabs deep into something with zero relevance to my to-do list.</p>
+      <p class="pop about-fine">Co-authored a <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4901478" target="_blank" rel="noopener">published survey on swarm robotics</a> (SSRN/Elsevier, 2024) and volunteers as an educator with <a href="https://uandi.org.in" target="_blank" rel="noopener">U&amp;I</a>, supporting underprivileged students across India.</p>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
-    <span class="ghost-num" aria-hidden="true">02</span>
-    <div class="section-head reveal">
-      <h2>Experience</h2>
-    </div>
+    <span class="ghost-num">02</span>
+    <div class="section-head pop"><h2>Experience</h2></div>
     <div class="timeline">
-      <div class="timeline-line" aria-hidden="true"></div>
-
-      <article class="timeline-item reveal">
-        <div class="timeline-dot dot-blue"></div>
-        <div class="timeline-content">
-          <div class="ti-top">
-            <h3>Think Round Inc.</h3>
-            <span class="ti-date">Jul 2026 — present</span>
-          </div>
-          <p class="ti-role">Full Stack Developer Intern &middot; Remote, from NYC</p>
-          <p>Building product features across Node.js, Express, and React, wiring REST APIs and cloud deploys, running in Agile sprints alongside a fully distributed engineering team.</p>
-          <div class="tag-row">
-            <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">React</span><span class="tag">REST APIs</span>
-          </div>
-        </div>
+      <div class="timeline-line"></div>
+      <article class="timeline-item pop">
+        <div class="timeline-dot"></div>
+        <div class="ti-top"><h3>Think Round Inc.</h3><span class="ti-date">Jul 2026 — present</span></div>
+        <p class="ti-role">Full Stack Developer Intern &middot; Remote, from NYC</p>
+        <p>Building product features across Node.js, Express, and React, wiring REST APIs and cloud deploys, running in Agile sprints alongside a fully distributed engineering team.</p>
+        <div class="tag-row"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">React</span><span class="tag">REST APIs</span></div>
       </article>
-
-      <article class="timeline-item reveal">
+      <article class="timeline-item pop">
         <div class="timeline-dot dot-pink"></div>
-        <div class="timeline-content">
-          <div class="ti-top">
-            <h3>A.P. Moller–Maersk</h3>
-            <span class="ti-date">Jul 2024 — Jun 2025</span>
-          </div>
-          <p class="ti-role">Cloud Infrastructure Engineering Intern &middot; Bangalore</p>
-          <p>Automated Windows and Linux image pipelines with AWS, Terraform, and Docker, cutting environment provisioning from roughly an hour down to about ten minutes across 70+ environments, holding ~98% uptime. Built Grafana dashboards that cut mean time to detect by roughly 40%.</p>
-          <div class="tag-row">
-            <span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Docker</span><span class="tag">Python</span><span class="tag">Grafana</span>
-          </div>
-        </div>
+        <div class="ti-top"><h3>A.P. Moller–Maersk</h3><span class="ti-date">Jul 2024 — Jun 2025</span></div>
+        <p class="ti-role">Cloud Infrastructure Intern &middot; Bangalore</p>
+        <p>Automated Windows and Linux image pipelines with AWS, Terraform, and Docker, cutting environment provisioning from roughly an hour down to about ten minutes across 70+ environments, holding ~98% uptime. Built Grafana dashboards that cut mean time to detect by roughly 40%.</p>
+        <div class="tag-row"><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Docker</span><span class="tag">Python</span><span class="tag">Grafana</span></div>
       </article>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section class="section" id="projects">
-    <span class="ghost-num" aria-hidden="true">03</span>
-    <div class="section-head reveal">
-      <h2>Selected work</h2>
+    <span class="ghost-num">03</span>
+    <div class="section-head pop"><h2>Selected work</h2></div>
+    <p class="proj-note pop">Two projects with live UI screenshots below; the rest listed with details underneath.</p>
+
+    <div class="featured-cards">
+
+      <article class="pcard pop">
+        <div class="carousel" data-carousel>
+          <div class="count-chip"><span class="cur">1</span> / <span class="total">3</span></div>
+          <button class="arrow arrow-prev" aria-label="Previous screenshot">‹</button>
+          <button class="arrow arrow-next" aria-label="Next screenshot">›</button>
+          <div class="carousel-track">
+            <img src="images/ca-1.png" alt="ConnectAbility homepage">
+            <img src="images/ca-2.png" alt="ConnectAbility login page">
+            <img src="images/ca-3.png" alt="ConnectAbility image captioning page">
+          </div>
+          <div class="dots"><span class="active"></span><span></span><span></span></div>
+        </div>
+        <div class="pcard-body">
+          <h3>ConnectAbility</h3>
+          <p>Vision Transformers + LLaMA for image captioning, built after watching visually impaired students struggle to take online tests independently.</p>
+          <div class="tag-row"><span class="tag">Django</span><span class="tag">ViT</span><span class="tag">LLaMA</span></div>
+        </div>
+      </article>
+
+      <article class="pcard pop">
+        <div class="carousel" data-carousel>
+          <div class="count-chip"><span class="cur">1</span> / <span class="total">4</span></div>
+          <button class="arrow arrow-prev" aria-label="Previous screenshot">‹</button>
+          <button class="arrow arrow-next" aria-label="Next screenshot">›</button>
+          <div class="carousel-track">
+            <img src="images/tl-1.png" alt="TurnNLearn homepage">
+            <img src="images/tl-2.png" alt="TurnNLearn flashcard deck">
+            <img src="images/tl-3.png" alt="TurnNLearn card flip animation">
+            <img src="images/tl-4.png" alt="TurnNLearn quiz page">
+          </div>
+          <div class="dots"><span class="active"></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="pcard-body">
+          <h3>TurnNLearn</h3>
+          <p>Browser-based flashcard and quiz app with 15+ subject tracks, a real hover-flip animation, and timed quizzes.</p>
+          <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </div>
+      </article>
+
     </div>
-    <div class="cards">
 
-      <article class="pcard reveal">
-        <div class="glow glow-blue" aria-hidden="true"></div>
-        <h3>Spam Back!</h3>
-        <p>An on-device macOS agent that runs a local LLM through Ollama to auto-generate replies that waste scammers' time. Fully offline, no data leaves the machine.</p>
-        <div class="tag-row"><span class="tag">Python</span><span class="tag">Ollama</span><span class="tag">SQLite</span><span class="tag">AppleScript</span></div>
-      </article>
-
-      <article class="pcard reveal">
-        <div class="glow glow-pink" aria-hidden="true"></div>
-        <h3>ConnectAbility</h3>
-        <p>Started after watching visually impaired students near my school struggle to take online tests independently. Combines Vision Transformers and LLaMA for image captioning, aimed at making digital content navigable without sight.</p>
-        <div class="tag-row"><span class="tag">Django</span><span class="tag">ViT</span><span class="tag">LLaMA</span></div>
-      </article>
-
-      <article class="pcard reveal">
-        <div class="glow glow-green" aria-hidden="true"></div>
-        <h3>SereneSpace</h3>
-        <p>A full-stack mental wellness app: journaling, mood tracking, and sentiment analysis wrapped in an interface built to feel calm rather than clinical.</p>
-        <div class="tag-row"><span class="tag">MongoDB</span><span class="tag">Express</span><span class="tag">React</span><span class="tag">Node.js</span></div>
-      </article>
-
-      <article class="pcard reveal">
-        <div class="glow glow-blue" aria-hidden="true"></div>
-        <h3>EvalDeck</h3>
-        <p>An LLM evaluation platform for comparing model behavior systematically, built around a FastAPI backend and MCP tooling with a React and TypeScript frontend.</p>
-        <div class="tag-row"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">FastAPI</span><span class="tag">MCP</span></div>
-      </article>
-
+    <span class="more-label pop">MORE WORK</span>
+    <div class="more-list">
+      <div class="more-row pop">
+        <div>
+          <h3>Spam Back!</h3>
+          <p>An on-device macOS agent that runs a local LLM through Ollama to auto-generate replies that waste scammers' time. Fully offline, no data leaves the machine.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">Ollama</span><span class="tag">SQLite</span><span class="tag">AppleScript</span></div>
+        </div>
+      </div>
+      <div class="more-row pop">
+        <div>
+          <h3>SereneSpace</h3>
+          <p>A full-stack mental wellness app: journaling, mood tracking, and sentiment analysis wrapped in an interface built to feel calm rather than clinical.</p>
+          <div class="tag-row"><span class="tag">MongoDB</span><span class="tag">Express</span><span class="tag">React</span><span class="tag">Node.js</span></div>
+        </div>
+      </div>
     </div>
 
-    <div class="field-notes reveal">
-      <p><strong>A Journey through Swarm Robotics</strong> &mdash; co-authored survey on decentralized multi-agent systems, published on SSRN/Elsevier, Aug 2024.</p>
-      <p><strong>Guiding LLMs Towards (In)Secure Code Generation</strong> &mdash; evaluated how prompting strategy affects code security across Claude and GPT models.</p>
+    <div class="field-notes pop">
+      <span class="fn-label">RESEARCH &amp; WRITING</span>
+      <div class="fn-item"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4901478" target="_blank" rel="noopener">A Journey through Swarm Robotics ↗</a><p>Co-authored survey on decentralized multi-agent systems, published on SSRN/Elsevier, Aug 2024.</p></div>
+      <div class="fn-item"><span class="fn-title">Guiding LLMs Towards (In)Secure Code Generation</span><p>Evaluated how prompting strategy affects code security across Claude and GPT models.</p></div>
     </div>
   </section>
 
   <!-- SKILLS -->
   <section class="section" id="skills">
-    <span class="ghost-num" aria-hidden="true">04</span>
-    <div class="section-head reveal">
-      <h2>Skills</h2>
-    </div>
-    <div class="inventory">
-      <div class="inv-col reveal">
-        <span class="inv-label">Languages</span>
-        <ul><li>Python</li><li>JavaScript</li><li>Java</li><li>SQL</li><li>C / C++</li></ul>
-      </div>
-      <div class="inv-col reveal">
-        <span class="inv-label">Frameworks &amp; tools</span>
-        <ul><li>React &middot; Node.js &middot; Express</li><li>Docker &middot; Terraform</li><li>AWS (EC2, S3, IAM)</li><li>Git &middot; Linux</li></ul>
-      </div>
-      <div class="inv-col reveal">
-        <span class="inv-label">ML / AI</span>
-        <ul><li>PyTorch &middot; Scikit-learn</li><li>Vision Transformers</li><li>LLaMA &middot; LLM systems</li><li>OpenCV</li></ul>
-      </div>
-      <div class="inv-col reveal">
-        <span class="inv-label">Certified</span>
-        <ul><li>AWS Cloud Practitioner</li></ul>
-      </div>
+    <span class="ghost-num">04</span>
+    <div class="section-head pop"><h2>Skills</h2></div>
+    <div class="inventory pop">
+      <div class="inv-col"><span class="inv-label">Languages</span><ul><li>Python</li><li>JavaScript</li><li>Java</li><li>SQL</li><li>C / C++</li></ul></div>
+      <div class="inv-col"><span class="inv-label">Frameworks &amp; tools</span><ul><li>React &middot; Node.js &middot; Express</li><li>Docker &middot; Terraform</li><li>AWS (EC2, S3, IAM)</li><li>Git &middot; Linux</li></ul></div>
+      <div class="inv-col"><span class="inv-label">ML / AI</span><ul><li>PyTorch &middot; Scikit-learn</li><li>Vision Transformers</li><li>LLaMA &middot; LLM systems</li><li>OpenCV</li></ul></div>
+      <div class="inv-col"><span class="inv-label">Certified</span><ul><li>AWS Cloud Practitioner</li></ul></div>
     </div>
   </section>
 
   <!-- EDUCATION -->
   <section class="section" id="education">
-    <span class="ghost-num" aria-hidden="true">05</span>
-    <div class="section-head reveal">
-      <h2>Education</h2>
-    </div>
+    <span class="ghost-num">05</span>
+    <div class="section-head pop"><h2>Education</h2></div>
     <div class="timeline">
-      <div class="timeline-line" aria-hidden="true"></div>
-      <article class="timeline-item reveal">
-        <div class="timeline-dot dot-blue"></div>
-        <div class="timeline-content">
-          <div class="ti-top">
-            <h3>Cornell University</h3>
-            <span class="ti-date">2025 — 2026</span>
-          </div>
-          <p class="ti-role">M.Eng. in Computer Science &middot; GPA 3.3/4.0</p>
-          <p>Computer Vision &middot; Operating Systems &middot; Computer Networks &middot; Software Engineering in ML &middot; Database Systems</p>
-        </div>
+      <div class="timeline-line"></div>
+      <article class="timeline-item pop">
+        <div class="timeline-dot"></div>
+        <div class="ti-top"><h3>Cornell University</h3><span class="ti-date">2025 — 2026</span></div>
+        <p class="ti-role">M.Eng. in Computer Science &middot; GPA 3.3/4.0</p>
+        <p>Computer Vision &middot; Operating Systems &middot; Computer Networks &middot; Software Engineering in ML &middot; Database Systems</p>
       </article>
-      <article class="timeline-item reveal">
+      <article class="timeline-item pop">
         <div class="timeline-dot dot-pink"></div>
-        <div class="timeline-content">
-          <div class="ti-top">
-            <h3>Visvesvaraya Technological University</h3>
-            <span class="ti-date">2021 — 2025</span>
-          </div>
-          <p class="ti-role">B.E. in Computer Science &middot; First Class with Distinction &middot; 9.3/10 CGPA</p>
-          <p>Gold medal, top semester scorer. Data Structures &amp; Algorithms &middot; AI &amp; Machine Learning &middot; Deep Learning &middot; Full Stack Development &middot; Cloud Computing</p>
-        </div>
+        <div class="ti-top"><h3>Visvesvaraya Technological University</h3><span class="ti-date">2021 — 2025</span></div>
+        <p class="ti-role">B.E. in Computer Science &middot; First Class with Distinction &middot; 9.3/10 CGPA</p>
+        <p>Gold medal, top semester scorer. Data Structures &amp; Algorithms &middot; AI &amp; Machine Learning &middot; Deep Learning &middot; Full Stack Development &middot; Cloud Computing</p>
       </article>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section contact" id="contact">
-    <span class="ghost-num" aria-hidden="true">06</span>
-    <div class="contact-inner reveal">
+    <span class="ghost-num">06</span>
+    <div class="contact-inner pop">
       <h2>Let's talk</h2>
       <p>If something here caught your attention, I'd genuinely love to hear from you.</p>
       <div class="contact-links">
-        <a href="mailto:sanjanardh19@gmail.com" class="btn btn-primary magnetic"><span>Email me</span></a>
+        <a href="mailto:sj882@cornell.edu" class="btn btn-primary magnetic"><span>Email me</span></a>
         <a href="https://www.linkedin.com/in/sanjana-janardhan" target="_blank" rel="noopener" class="btn btn-ghost magnetic"><span>LinkedIn</span></a>
         <a href="https://github.com/SanjanaJanardhan" target="_blank" rel="noopener" class="btn btn-ghost magnetic"><span>GitHub</span></a>
       </div>
+      <p class="contact-alt">Or reach me at <a href="mailto:sanjanardh19@gmail.com">sanjanardh19@gmail.com</a></p>
     </div>
   </section>
 
 </main>
 
-<footer class="footer">
-  <span>&copy; 2026 Sanjana Janardhan</span>
-</footer>
+<footer class="footer">© 2026 Sanjana Janardhan</footer>
 
 <script src="script.js"></script>
 </body>
