@@ -67,7 +67,6 @@ a.btn-ghost:hover { border-color:var(--ink); background:var(--paper-raised); }
 /* ABOUT */
 .about-copy { max-width:640px; }
 .about-copy p { font-size:1.08rem; }
-.about-fine { font-size:0.95rem; color:var(--ink-faint); }
 
 /* TIMELINE */
 .timeline { position:relative; padding-left:2.2rem; }
@@ -85,7 +84,6 @@ a.btn-ghost:hover { border-color:var(--ink); background:var(--paper-raised); }
 .tag { font-family:var(--mono); font-size:0.72rem; padding:0.3rem 0.7rem; border:1px solid var(--line-strong); color:var(--ink-soft); border-radius:999px; }
 
 /* PROJECTS */
-.proj-note { font-family:var(--mono); font-size:0.78rem; color:var(--ink-faint); margin-bottom:2rem; }
 .featured-cards { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-bottom:1.5rem; }
 .pcard { border:1px solid var(--line); background:var(--paper-raised); border-radius:18px; overflow:hidden; }
 .pcard-body { padding:1.5rem; }
@@ -131,7 +129,6 @@ a.btn-ghost:hover { border-color:var(--ink); background:var(--paper-raised); }
 .contact-inner h2 { font-size:clamp(2rem,5vw,3rem); margin:0 0 1rem; }
 .contact-inner p { font-size:1.1rem; max-width:46ch; margin-bottom:2.5rem; }
 .contact-links { display:flex; gap:1rem; flex-wrap:wrap; }
-.contact-alt { font-family:var(--mono); font-size:0.85rem; color:var(--ink-faint); margin-top:1.5rem; }
 
 .footer { padding:1.5rem var(--edge) 2rem; font-family:var(--mono); font-size:0.72rem; color:var(--ink-faint); max-width:var(--container); margin:0 auto; }
 
