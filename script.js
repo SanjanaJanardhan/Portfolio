@@ -37,20 +37,27 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // ---------- SCROLL REVEALS ----------
-  var pops = document.querySelectorAll('.pop');
+  // ---------- SCROLL REVEALS (manual scroll-check, same approach as hero shapes) ----------
+  var pops = Array.prototype.slice.call(document.querySelectorAll('.pop'));
   if (reducedMotion) {
     pops.forEach(function (p) { p.classList.add('in'); });
   } else {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
+    function checkPops() {
+      var vh = window.innerHeight;
+      pops.forEach(function (p) {
+        if (p.classList.contains('in')) return;
+        var rect = p.getBoundingClientRect();
+        if (rect.top < vh * 0.9) {
+          p.classList.add('in');
         }
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -12% 0px' });
-    pops.forEach(function (p) { io.observe(p); });
+    }
+    window.addEventListener('scroll', checkPops, { passive: true });
+    window.addEventListener('resize', checkPops);
+    checkPops();
+    // Safety net: re-check periodically in case something (like an image load
+    // shifting layout) causes a section to be missed by the scroll listener.
+    setInterval(checkPops, 700);
   }
 
   // ---------- MAGNETIC BUTTONS ----------
