@@ -59,7 +59,38 @@ a.btn-ghost { background:transparent; color:var(--ink); border:1px solid var(--l
 a.btn-ghost:hover { border-color:var(--ink); background:var(--paper-raised); }
 
 /* SECTIONS */
-.section { max-width:var(--container); margin:0 auto; padding:6.5rem var(--edge) 2rem; position:relative; }
+.section { max-width:var(--container); margin:0 auto; padding:6.5rem var(--edge) 2rem; position:relative; overflow:hidden; }
+
+/* ---------- SECTION FLOATERS (continuous idle drift) ---------- */
+.sec-floaters { position:absolute; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+.section > *:not(.sec-floaters) { position:relative; z-index:1; }
+.floater { position:absolute; opacity:0.55; animation:drift 15s ease-in-out infinite; }
+.f-ring { width:34px; height:34px; border-radius:50%; border:2px solid; }
+.f-dot { width:12px; height:12px; border-radius:50%; }
+.f-plus { width:22px; height:22px; }
+.f-plus::before, .f-plus::after { content:''; position:absolute; background:currentColor; }
+.f-plus::before { width:100%; height:2.5px; top:50%; left:0; transform:translateY(-50%); }
+.f-plus::after { height:100%; width:2.5px; left:50%; top:0; transform:translateX(-50%); }
+.f-blue { color:var(--blue-strong); border-color:var(--blue-strong); }
+.f-pink { color:var(--pink-strong); border-color:var(--pink-strong); }
+.f-green { color:var(--green-strong); border-color:var(--green-strong); }
+.f-dot.f-blue { background:var(--blue-strong); }
+.f-dot.f-pink { background:var(--pink-strong); }
+.f-dot.f-green { background:var(--green-strong); }
+
+@keyframes drift {
+  0%   { transform:translate(0,0) rotate(0deg); }
+  25%  { transform:translate(14px,-16px) rotate(8deg); }
+  50%  { transform:translate(-8px,10px) rotate(-6deg); }
+  75%  { transform:translate(-16px,-8px) rotate(5deg); }
+  100% { transform:translate(0,0) rotate(0deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .floater { animation:none; }
+}
+@media (max-width:900px) {
+  .sec-floaters { display:none; }
+}
 .ghost-num { position:absolute; top:2.5rem; left:var(--edge); font-family:var(--display); font-weight:700; font-size:5rem; color:transparent; -webkit-text-stroke:1.5px rgba(34,29,43,0.09); line-height:1; pointer-events:none; user-select:none; }
 .section-head { margin-bottom:3rem; position:relative; }
 .section-head h2 { font-size:clamp(1.8rem,3.4vw,2.4rem); font-weight:600; }
