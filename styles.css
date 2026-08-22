@@ -1,5 +1,5 @@
 :root {
-  --paper:#FBF7F2; --paper-raised:#F5EFE6; --ink:#221D2B; --ink-soft:#4B4358; --ink-faint:#948C9E;
+  --paper:#FFFFFF; --paper-raised:#F5EFE6; --ink:#221D2B; --ink-soft:#4B4358; --ink-faint:#948C9E;
   --line:#E2DACB; --line-strong:#CFC5B4;
   --blue-bg:#DCE6FA; --blue-text:#4C6BB0; --blue-strong:#6C8FE0;
   --pink-bg:#FAD9E4; --pink-text:#C4547C; --pink-strong:#E88FA6;
@@ -26,7 +26,7 @@ a[href] { color:var(--blue-text); }
 a[href]:hover { color:var(--ink); }
 
 /* NAV */
-.nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:1.2rem var(--edge); background:rgba(251,247,242,0.85); backdrop-filter:blur(10px); border-bottom:1px solid transparent; transition:border-color 0.3s var(--ease); }
+.nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:1.2rem var(--edge); background:rgba(255,255,255,0.85); backdrop-filter:blur(10px); border-bottom:1px solid transparent; transition:border-color 0.3s var(--ease); }
 .nav.scrolled { border-bottom-color:var(--line); }
 .nav-mark { font-family:var(--display); font-weight:700; font-size:1.2rem; }
 .nav-links { display:flex; gap:2.2rem; font-family:var(--mono); font-size:0.8rem; }
